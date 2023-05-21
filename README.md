@@ -13,9 +13,9 @@ The repository contains two folders, the AutoSafe folder contains the source cod
 <li>Download the source code of RflySimSafe at https://github.com/tujinhu/RFlySimSafev1</li>
 <li>Change the platform path of the RflySimSafe model folder software-in-the-loop and hardware-in-the-loop one-key startup script (RflySimSafe\Model\***\***SITL(HITL).bat): Specifically,Change the path to the path where the RFlySim file(PX4PSP) is located
 
-![](image/image1.png "SITL")
+![](AutoSafe/image/image1.png "SITL")
 
-![](image/image2.png "HITL")
+![](AutoSafe/image/image2.png "HITL")
 </li>
 <li>Copy the 'Model\***\***.dll' file to the 'PX4PSP\CopterSim\external\model' folder.</li>
 <li>Open the RflySimSafe folder and run in the terminal:'pip install -r requirements.txt'.</li>
