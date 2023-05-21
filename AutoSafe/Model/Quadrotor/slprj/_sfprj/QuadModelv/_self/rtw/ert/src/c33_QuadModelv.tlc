@@ -1,0 +1,48 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   4 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "method"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "E:\Software\Matlab2022aa\toolbox\eml\lib\matlab\randfun\private\eml_rand.m:523-529"\
+    }\
+    ChartData {\
+      Name         "state"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "E:\Software\Matlab2022aa\toolbox\eml\lib\matlab\randfun\private\eml_rand_mcg16807_stateful.m:164-169"\
+    }\
+    ChartData {\
+      Name         "state"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "E:\Software\Matlab2022aa\toolbox\eml\lib\matlab\randfun\private\eml_rand_shr3cong_stateful.m:165-170"\
+      Dimensions   [2]\
+    }\
+    ChartData {\
+      Name         "state"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "E:\Software\Matlab2022aa\toolbox\eml\lib\matlab\randfun\private\eml_rand_mt19937ar_stateful.m:166-171"\
+      Dimensions   [625]\
+    }\
+  }
+  %return ChartDataElements
+%endfunction

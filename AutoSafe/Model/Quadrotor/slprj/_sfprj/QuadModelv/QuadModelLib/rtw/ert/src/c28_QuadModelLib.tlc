@@ -1,0 +1,111 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   13 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "t0"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "QuadModelLib:191:186-188"\
+    }\
+    ChartData {\
+      Name         "isInGust"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "QuadModelLib:191:231-239"\
+    }\
+    ChartData {\
+      Name         "t1"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "QuadModelLib:191:294-296"\
+    }\
+    ChartData {\
+      Name         "a"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "QuadModelLib:191:339-340"\
+    }\
+    ChartData {\
+      Name         "ang"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "QuadModelLib:191:383-386"\
+    }\
+    ChartData {\
+      Name         "wlast"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "QuadModelLib:191:434-439"\
+    }\
+    ChartData {\
+      Name         "wlast_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "QuadModelLib:191:434-439"\
+    }\
+    ChartData {\
+      Name         "wNow"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "QuadModelLib:191:495-499"\
+    }\
+    ChartData {\
+      Name         "wNow_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "QuadModelLib:191:495-499"\
+    }\
+    ChartData {\
+      Name         "method"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "E:\Software\Matlab2022aa\toolbox\eml\lib\matlab\randfun\private\eml_rand.m:523-529"\
+    }\
+    ChartData {\
+      Name         "state"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "E:\Software\Matlab2022aa\toolbox\eml\lib\matlab\randfun\private\eml_rand_mcg16807_stateful.m:164-169"\
+    }\
+    ChartData {\
+      Name         "state"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "E:\Software\Matlab2022aa\toolbox\eml\lib\matlab\randfun\private\eml_rand_shr3cong_stateful.m:165-170"\
+      Dimensions   [2]\
+    }\
+    ChartData {\
+      Name         "state"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "E:\Software\Matlab2022aa\toolbox\eml\lib\matlab\randfun\private\eml_rand_mt19937ar_stateful.m:166-171"\
+      Dimensions   [625]\
+    }\
+  }
+  %return ChartDataElements
+%endfunction
