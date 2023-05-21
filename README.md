@@ -5,10 +5,7 @@ design and algorithm development, and uses python as a tool for top-level vision
 has developed a fault injection interface, introduced open source database software, supports importing drone test cases into the platform, and 
 realized fault injection and data analysis throughout the process.
 
-
-## An example for RFlySimSafe.
-A video demonstrating the RFlySimSafe platform by introducing some examples from the paper
-[![An example for RFlySimSafe](https://res.cloudinary.com/marcomontalbano/image/upload/v1679997079/video_to_markdown/images/youtube--Abd9i0Ni7SQ-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/Abd9i0Ni7SQ "An example for RFlySimSafe")
+The repository contains two folders, the AutoSafe folder contains the source code for automatic testing and assessment, and the DataSets folder is the dataset generated based on the platform. Details will be introduced below.
 
 ## How to use the files.
 <ol>
@@ -26,7 +23,7 @@ A video demonstrating the RFlySimSafe platform by introducing some examples from
 <li>run AutoTestAPI/AutoTest.py</li>
 </ol>
 
-## File structure.
+## AutoSafe folder structure.
 AutoTestAPI:This folder is the core of RflySimSafe. specific:
 
 a) AutoMavCmd: control sequence analysis
@@ -49,9 +46,13 @@ Model:This folder manages the source code of simulink models of quadrotor model.
 
 Fault.db:The test case database.
 
+## An example for RFlySimSafe.
+A video demonstrating the RFlySimSafe platform by introducing some examples from the paper
+[![An example for RFlySimSafe](https://res.cloudinary.com/marcomontalbano/image/upload/v1679997079/video_to_markdown/images/youtube--Abd9i0Ni7SQ-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/Abd9i0Ni7SQ "An example for RFlySimSafe")
+
 ## Note
 RflySimSafe is just a preview, We are working on improving and developing the functions and related documents of the platform. In our future work, we will devote ourselves to developing a more comprehensive test platform and improve the use and configuration documents of the platform. If you are interested in the content of our work, please continue to pay attention to us!
 
 
-# RflySimDataSet
-RflySimDataSet is dedicated to publishing and managing datasets for unmanned systems. There are three sources of datasets: software-in-the-loop datasets, hardware-in-the-loop datasets, and real-device experiment datasets. We will release our latest work as soon as possible, please continue to pay attention.
+# DataSet
+DataSets are dedicated to publishing and managing datasets for unmanned systems. There are three sources of datasets: software-in-the-loop datasets, hardware-in-the-loop datasets, and real-device experiment datasets. We will release our latest work as soon as possible, please continue to pay attention.
