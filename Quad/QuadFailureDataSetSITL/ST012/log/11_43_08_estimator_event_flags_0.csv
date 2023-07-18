@@ -1,0 +1,5 @@
+timestamp,timestamp_sample,information_event_changes,warning_event_changes,gps_checks_passed,reset_vel_to_gps,reset_vel_to_flow,reset_vel_to_vision,reset_vel_to_zero,reset_pos_to_last_known,reset_pos_to_gps,reset_pos_to_vision,starting_gps_fusion,starting_vision_pos_fusion,starting_vision_vel_fusion,starting_vision_yaw_fusion,yaw_aligned_to_imu_gps,gps_quality_poor,gps_fusion_timout,gps_data_stopped,gps_data_stopped_using_alternate,height_sensor_timeout,stopping_navigation,invalid_accel_bias_cov_reset,bad_yaw_using_gps_course,stopping_mag_use,vision_data_stopped,emergency_yaw_reset_mag_stopped
+750000,750000,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+5603000,5603000,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+10004000,10004000,3,0,0,1,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+53125000,53125000,4,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
