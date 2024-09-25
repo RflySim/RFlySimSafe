@@ -1,1 +1,0 @@
-Before using the routine, read the handbook in the “docs” folder
