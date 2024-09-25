@@ -1,0 +1,41 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   3 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "xTemp"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "QuadModelv:14288:74-79"\
+      Dimensions   [8]\
+    }\
+    ChartData {\
+      Name         "kk"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "QuadModelv:14288:138-140"\
+    }\
+    ChartData {\
+      Name         "ss"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "QuadModelv:14288:184-186"\
+      Dimensions   [6]\
+    }\
+  }
+  %return ChartDataElements
+%endfunction

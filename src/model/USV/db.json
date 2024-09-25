@@ -1,0 +1,135 @@
+{
+    "faultcase": [
+        {
+            "CaseID": 1,
+            "Subsystem": "Sensor subsystem",
+            "FaultType": "123451",
+            "ControlSequence": "2,1;1,1,5;2,3,100,0,0;1,1,15;2,6,123540,5,10;1,1,10",
+            "InterestedLog": {
+                "*vehicle_gps_position_0.csv": [
+                    "timestamp",
+                    "lat",
+                    "lon",
+                    "alt",
+                    "satellites_used"
+                ],
+                "*vehicle_command_0.csv": [
+                    "timestamp",
+                    "param1"
+                ]
+            },
+            "TestStatus": "Finished"
+        },
+        {
+            "CaseID": 2,
+            "Subsystem": "Sensor subsystem",
+            "FaultType": "125340",
+            "ControlSequence": "2,1;1,1,5;2,3,250,250,0;1,1,15;2,6,125340;1,1,10",
+            "InterestedLog": {
+                "*vehicle_gps_position_0.csv": [
+                    "timestamp",
+                    "lat",
+                    "lon",
+                    "alt",
+                    "satellites_used"
+                ],
+                "*vehicle_command_0.csv": [
+                    "timestamp",
+                    "param1"
+                ]
+            },
+            "TestStatus": "Finished"
+        },
+        {
+            "CaseID": 3,
+            "Subsystem": "Sensor subsystem",
+            "FaultType": "125340",
+            "ControlSequence": "2,1;1,1,5;2,3,250,250,0;1,1,15;2,6,125340;1,1,10",
+            "InterestedLog": {
+                "*vehicle_gps_position_0.csv": [
+                    "timestamp",
+                    "lat",
+                    "lon",
+                    "alt",
+                    "satellites_used"
+                ],
+                "*vehicle_command_0.csv": [
+                    "timestamp",
+                    "param1"
+                ]
+            },
+            "TestStatus": "Finished"
+        }
+    ],
+    "testdata": {
+        "*actuator_outputs_0.csv": [
+            "timestamp",
+            "noutputs",
+            "output[0]",
+            "output[1]",
+            "output[2]",
+            "output[3]",
+            "output[4]",
+            "output[5]"
+        ],
+        "*estimator_status_0.csv": [
+            "timestamp",
+            "vibe[0]",
+            "vibe[1]",
+            "vibe[2]",
+            "output_tracking_error[0]",
+            "output_tracking_error[1]",
+            "output_tracking_error[2]",
+            "pos_horiz_accuracy",
+            "pos_vert_accuracy"
+        ],
+        "*vehicle_command_0.csv": [
+            "timestamp",
+            "param1"
+        ],
+        "*sensor_combined_0.csv": [
+            "timestamp",
+            "gyro_rad[0]",
+            "gyro_rad[1]",
+            "gyro_rad[2]",
+            "accelerometer_m_s2[0]",
+            "accelerometer_m_s2[1]",
+            "accelerometer_m_s2[2]"
+        ],
+        "*vehicle_magnetometer_0.csv": [
+            "timestamp",
+            "magnetometer_ga[0]",
+            "magnetometer_ga[1]",
+            "magnetometer_ga[2]"
+        ],
+        "*estimator_attitude_0.csv": [
+            "timestamp",
+            "q[0]",
+            "q[1]",
+            "q[3]"
+        ],
+        "*vehicle_gps_position_0.csv": [
+            "timestamp",
+            "lat",
+            "lon",
+            "alt",
+            "alt_ellipsoid",
+            "s_variance_m_s",
+            "c_variance_rad",
+            "eph",
+            "epv",
+            "satellites_used"
+        ],
+        "*vehicle_global_position_0.csv": [
+            "timestamp",
+            "lat",
+            "lon",
+            "alt",
+            "alt_ellipsoid",
+            "eph",
+            "epv"
+        ]
+    },
+    "testcase": "1,2,3",
+    "Vision": "off"
+}
