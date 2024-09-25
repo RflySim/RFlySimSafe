@@ -1,0 +1,28 @@
+{
+    "FAULT_CASE": [
+        {
+            "CaseID": 1,
+            "Subsystem": "Power",
+            "Component": "Motor",
+            "FaultID": "123450",
+            "FaultType": "Motor Fault",
+            "FaultMode": "Decreased efficiency of motor execution",
+            "FaultParams": "0",
+            "ControlSequence": "2,1;1,1,5;2,3,150,0,-30;1,2,150,0,-30;2,5,800,0,-60;1,1,10;2,6,123450,123450,123450,1,1,1,1,1,0;1,1,10",
+            "TestStatus": "Finished"
+        },
+        {
+            "CaseID": 2,
+            "Subsystem": "Sensor",
+            "Component": "Magnetometer",
+            "FaultID": "123544",
+            "FaultType": "Magnetometer noise",
+            "FaultMode": "Magnetometer noise interference",
+            "FaultParams": "0",
+            "ControlSequence": "2,1;1,1,5;2,3,150,0,-30;1,2,150,0,-30;2,5,800,0,-60;1,1,10;2,6,123544,0;1,1,10",
+            "TestStatus": "Finished"
+        }
+    ],
+    "TEST_CASE": "1;2",
+    "VISION": "off"
+}

@@ -1,0 +1,28 @@
+{
+    "FAULT_CASE": [
+        {
+            "CaseID": 1,
+            "Subsystem": "Sensor",
+            "Component": "Accelerometer",
+            "FaultID": "123544",
+            "FaultType": "Noise",
+            "FaultMode": "Noise interference",
+            "FaultParams": "0",
+            "ControlSequence": "2,1;2,6,123544,123544,123544, 3, 0,0.05, 1,-1,-1;1,1,1;2,6,123544,123544,123544, 3, 0,5, 1,-1,-1;1,1,5;2,6,123544,123544,123544, 3, 0,0.05, 1,-1,-1;1,1,1",
+            "TestStatus": "Finished"
+        },
+        {
+            "CaseID": 2,
+            "Subsystem": "Sensor",
+            "Component": "Accelerometer",
+            "FaultID": "123544",
+            "FaultType": "Noise",
+            "FaultMode": "Noise interference",
+            "FaultParams": "0",
+            "ControlSequence": "2,1;1,1,1;2,6,FInR:13,3, 1,-1,-1, 0,500, 0,0,0,0,0,0,0,0,0,0,0;1,1,5;2,6,FInR:13,3, 1,-1,-1, 0,0, 0,0,0,0,0,0,0,0,0,0,0;1,1,1",
+            "TestStatus": "Finished"
+        }
+    ],
+    "TEST_CASE": "2",
+    "VISION": "Off"
+}
